@@ -12,6 +12,8 @@ body {
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	background: #0079bf;
+	background-image: url("https://images.unsplash.com/photo-1584949091598-c31daaaa4aa9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+	background-position: center;
 }
 nav {
 	background: #026aa7;
@@ -40,6 +42,12 @@ nav a {
 	cursor: move;
 	align-self: flex-start;
 	border-radius: 5px;
+	color: white;
+	backdrop-filter: blur(4px) saturate(180%);
+	-webkit-backdrop-filter: blur(4px) saturate(180%);
+	background-color: rgba(17, 25, 40, 0.63);
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.125);
 }
 .top-container {
 	display: flex;
@@ -57,10 +65,11 @@ li button {
 	cursor: pointer;
 }
 .item {
+	color: #000;
 	padding: 15px 5px;
 	margin: 10px 0;
 	background: #f8f8f8;
-	box-shadow: 0.5px 1.5px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: 0.5px 1.5px 1px rgba(255, 255, 255, 0.4);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -75,10 +84,18 @@ li button {
 	margin-top: 20px;
 	font-size: 16px;
 }
+.add-item-btn {
+	cursor: pointer;
+	border-radius: 5px;
+}
 form {
 	display: none;
 	padding: 5px;
 	position: relative;
+}
+.form-new-item {
+	margin-top: 1.5rem;
+	border: 1px dashed #ccc;
 }
 .top-form-container {
 	display: flex;
@@ -95,6 +112,7 @@ form {
 	width: 100%;
 	padding: 5px;
 	font-size: 16px;
+	border-radius: 5px;
 }
 .validation-msg {
 	display: block;
@@ -103,11 +121,13 @@ form {
 	padding: 5px 0;
 }
 .close-form-btn {
+	cursor: pointer;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	width: 25px;
 	height: 25px;
+	border-radius: 5px;
 }
 button[type="submit"] {
 	display: inline-block;
@@ -115,6 +135,7 @@ button[type="submit"] {
 	padding: 10px 0;
 	margin-top: 5px;
 	cursor: pointer;
+	border-radius: 5px;
 }
 
 /* Add New Container */
@@ -127,6 +148,13 @@ button[type="submit"] {
 	margin: 10px;
 	cursor: pointer;
 	align-self: flex-start;
+	border-radius: 5px;
+	color: white;
+	backdrop-filter: blur(4px) saturate(180%);
+	-webkit-backdrop-filter: blur(4px) saturate(180%);
+	background-color: rgba(17, 25, 40, 0.63);
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.125);
 }
 .add-container-btn {
 	margin-top: 5px;
